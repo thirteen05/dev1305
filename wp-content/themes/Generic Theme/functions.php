@@ -8,7 +8,7 @@ add_theme_support( 'post-thumbnails' );
 
 function register_my_menu() {
   register_nav_menus( array(
-    'primary' => __( 'Primary Menu', 'DD2' ),
+    'primary' => __( 'Primary Menu', 'Fontana' ),
 ));
 
 }
@@ -32,20 +32,6 @@ function left_sidebar_widgets_init() {
 }
 
 add_action( 'widgets_init', 'left_sidebar_widgets_init' );
-
-//
-//Creates Header Widget Area
-//
-
-function header_area_widgets_init() {
-    register_sidebar( array(
-        'name' => __( 'Header Area'),
-        'id' => 'header_area',
-        'description' => __( 'Widgets in this area will be shown in top-right corner of header', 'theme-slug' ),
-    ) );
-}
-
-add_action( 'widgets_init', 'header_area_widgets_init' );
 
 //
 // Replaces the excerpt "more" text by a link
