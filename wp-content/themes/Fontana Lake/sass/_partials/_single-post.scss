@@ -1,0 +1,54 @@
+.column-single-content{
+	background-color: #fff;
+	margin-bottom: 60px;
+}
+
+.single-post-content{
+	padding: 30px;
+}
+
+.single-post-content > p{
+	line-height: 1.8em;
+}
+
+ul.single-post-meta{
+	display: inline-block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+}
+
+ul.single-post-meta > li{
+	display: inline;
+	padding: 0px 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+
+.single-post-subheader{
+	text-transform: uppercase;
+	margin: 30px auto;
+    font-size: 24px;
+}
+
+.single-post-thumbnail{
+	overflow: hidden;
+	max-height: 400px;
+}
+
+.single-post-thumbnail > img{
+	width: 100%;
+	height: auto;
+	position: center center;
+}
+
+.wrapper-single-title{
+	padding: 60px;
+}
+
+.wrapper-single-title > h1{
+	text-transform: uppercase;
+	font-size: 50px;
+}
