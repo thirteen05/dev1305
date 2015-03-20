@@ -4,6 +4,8 @@ Bootstrap-WordPress-Sass Template
 
 This is a basic, boilerplate Bootstrap WordPress Theme that is SASS-ready.  Utilizes @twittem's wp-bootstrap-navwalker to enable WordPress Menu functionality within the Bootstrap Navbar.
 
+Hopefully this will save others some time, as well!
+
 Comes with:
 
 WordPress 4.1.1
