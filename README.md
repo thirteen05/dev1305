@@ -9,8 +9,11 @@ Hopefully this will save others some time, as well!
 Comes with:
 
 WordPress 4.1.1
+
 Bootstrap 3.3.4
+
 jQuery 2.1.3
+
 Stellar.js 0.6.2
 
 Requires:
