@@ -6,17 +6,14 @@ This is a basic, boilerplate Bootstrap WordPress Theme that is SASS-ready.  Util
 
 Hopefully this will save others some time, as well!
 
-Comes with:
+# Comes with:
 
-WordPress 4.1.1
-
-Bootstrap 3.3.4
-
-jQuery 2.1.3
-
+WordPress 4.1.1<br/>
+Bootstrap 3.3.4<br/>
+jQuery 2.1.3<br/>
 Stellar.js 0.6.2
 
-Requires:
+# Requires:
 
 Ruby (for the SASS config.rb file)
 Compass (for SASS compiling)

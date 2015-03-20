@@ -15,5 +15,5 @@ Stellar.js 0.6.2
 
 # Requires:
 
-Ruby (for the SASS config.rb file)
+Ruby (for the SASS config.rb file)<br/>
 Compass (for SASS compiling)
