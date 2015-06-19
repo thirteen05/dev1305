@@ -12,16 +12,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 @import "compass";
-@import "compass/reset";
+//@import "compass/reset";
 
 @import "_partials/fonts";
 @import "_partials/globals";
-@import "_partials/header";
-@import "_partials/footer";
-@import "_partials/sidebar";
 @import "_partials/home";
-@import "_partials/single-post";
-@import "_partials/comments";
-@import "_partials/contact-form";
-@import "_partials/overrides";
-@import "_partials/media-queries";
+
+
