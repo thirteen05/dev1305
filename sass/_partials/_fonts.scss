@@ -1,0 +1,40 @@
+@font-face {
+    font-family: LeagueGothicRegular;
+    src: url(fonts/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: LeagueGothicItalic;
+    src: url(sansation_light.woff);
+}
+
+@font-face {
+    font-family: LeagueGothicCondensedRegular;
+    src: url(sansation_light.woff);
+}
+
+@font-face {
+    font-family: LeagueGothicCondensedItalic;
+    src: url(sansation_light.woff);
+}
+
+@font-face {
+    font-family: FFDIN;
+    src: url(fonts/DINPro-Light.ttf);
+}
+
+.font-gothic{
+  font-family: LeagueGothicRegular, Helvetica, Veranda, sans-serif!important;
+}
+
+.font-din{
+  font-family: FFDIN, Veranda, sans-serif;
+}
+
+.font-gothic-ital{}
+.font-gothic-con{}
+.font-gothic-con-ital{}
+
+.font-skyblue{
+  color: $skyblue;
+}

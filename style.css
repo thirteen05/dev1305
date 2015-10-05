@@ -9,7 +9,220 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+/* line 3, sass/_partials/_globals.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 2000px; }
+
+/* line 9, sass/_partials/_globals.scss */
+h2 {
+  font-size: 4rem; }
+
+/* line 13, sass/_partials/_globals.scss */
+.relative {
+  position: relative; }
+
+/* line 17, sass/_partials/_globals.scss */
+p {
+  font-size: 1.5rem;
+  color: #555; }
+
+/* line 22, sass/_partials/_globals.scss */
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+
+@font-face {
+  font-family: LeagueGothicRegular;
+  src: url(fonts/LeagueGothic-Regular.otf); }
+@font-face {
+  font-family: LeagueGothicItalic;
+  src: url(sansation_light.woff); }
+@font-face {
+  font-family: LeagueGothicCondensedRegular;
+  src: url(sansation_light.woff); }
+@font-face {
+  font-family: LeagueGothicCondensedItalic;
+  src: url(sansation_light.woff); }
+@font-face {
+  font-family: FFDIN;
+  src: url(fonts/DINPro-Light.ttf); }
+/* line 26, sass/_partials/_fonts.scss */
+.font-gothic {
+  font-family: LeagueGothicRegular, Helvetica, Veranda, sans-serif !important; }
+
+/* line 30, sass/_partials/_fonts.scss */
+.font-din {
+  font-family: FFDIN, Veranda, sans-serif; }
+
+/* line 38, sass/_partials/_fonts.scss */
+.font-skyblue {
+  color: #27a8e0; }
+
+/* line 1, sass/_partials/_navbar.scss */
+#thirteen05-navbar {
+  background-color: transparent;
+  min-height: 100px;
+  box-shadow: none;
+  border: none;
+  transition: all .5s; }
+  /* line 8, sass/_partials/_navbar.scss */
+  #thirteen05-navbar .navbar-brand {
+    padding: 0px 15px; }
+  /* line 12, sass/_partials/_navbar.scss */
+  #thirteen05-navbar .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    margin-top: 0px; }
+    /* line 17, sass/_partials/_navbar.scss */
+    #thirteen05-navbar .dropdown-menu li a {
+      padding: 3px 20px;
+      color: white;
+      font-family: LeagueGothicRegular;
+      font-size: 1.4rem;
+      text-transform: lowercase;
+      text-shadow: 0px 1px 3px black; }
+      /* line 26, sass/_partials/_navbar.scss */
+      #thirteen05-navbar .dropdown-menu li a:hover {
+        background-color: #27a8e0; }
+  /* line 33, sass/_partials/_navbar.scss */
+  #thirteen05-navbar .navbar-nav > li > a {
+    padding: 0px 15px;
+    line-height: 100px;
+    font-family: LeagueGothicRegular;
+    font-size: 1.6rem;
+    text-transform: lowercase;
+    color: #FFF;
+    text-shadow: 1px 1px 3px black;
+    transition: all .2s ease-in; }
+    /* line 43, sass/_partials/_navbar.scss */
+    #thirteen05-navbar .navbar-nav > li > a:hover {
+      background-color: #27a8e0;
+      transform: scale(1.2, 1.2);
+      text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
+      -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+      /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+      -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+      /* Firefox 3.5 - 3.6 */
+      box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+      /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
+/* line 55, sass/_partials/_navbar.scss */
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block; }
+
+/* line 1, sass/_partials/_btn.scss */
+.thirteen05-btn {
+  width: 240px;
+  height: 60px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  margin: 0;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #CCC;
+  background: -webkit-linear-gradient(180deg, orange, darkorange);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, orange, darkorange);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, orange, darkorange);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(180deg, #ffa500, #ff8c00);
+  /* Standard syntax */
+  text-shadow: 1px 1px 1px brown;
+  transition: all .2s ease-in;
+  color: white; }
+  /* line 20, sass/_partials/_btn.scss */
+  .thirteen05-btn.shadow {
+    -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+  /* line 26, sass/_partials/_btn.scss */
+  .thirteen05-btn:hover {
+    -ms-transform: scale(1.1, 1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1);
+    /* Safari */
+    transform: scale(1.1, 1.1);
+    text-shadow: 0px 3px 3px brown;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 20px 10px -12px rgba(0, 0, 0, 0.3);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 20px 10px -12px rgba(0, 0, 0, 0.3);
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 20px 10px -12px rgba(0, 0, 0, 0.3);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+  /* line 38, sass/_partials/_btn.scss */
+  .thirteen05-btn:active {
+    -ms-transform: scale(1, 1);
+    /* IE 9 */
+    -webkit-transform: scale(1, 1);
+    /* Safari */
+    transform: scale(1, 1);
+    text-shadow: 0px 2px 3px brown;
+    border-color: #CCC;
+    color: white;
+    background: -webkit-linear-gradient(180deg, orange, darkorange);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, orange, darkorange);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, orange, darkorange);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, #ffa500, #ff8c00);
+    /* Standard syntax */
+    -webkit-box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+  /* line 54, sass/_partials/_btn.scss */
+  .thirteen05-btn:focus {
+    border-color: white;
+    color: white; }
+
 /* line 1, sass/_partials/_home.scss */
 body {
-  background-color: #CCC;
-  color: #FFF; }
+  color: #222; }
+
+/* line 5, sass/_partials/_home.scss */
+#thirteen05-carousel {
+  height: 80vh;
+  background-color: #222; }
+  /* line 9, sass/_partials/_home.scss */
+  #thirteen05-carousel .carousel-inner {
+    height: 100%; }
+  /* line 13, sass/_partials/_home.scss */
+  #thirteen05-carousel .carousel-caption h1 {
+    font-size: 5rem; }
+
+/* line 24, sass/_partials/_home.scss */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+  height: 100%; }
+/* line 29, sass/_partials/_home.scss */
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+/* line 35, sass/_partials/_home.scss */
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+/* line 41, sass/_partials/_home.scss */
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+/* line 50, sass/_partials/_home.scss */
+.carousel-fade .carousel-control {
+  z-index: 2; }
