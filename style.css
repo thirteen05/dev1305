@@ -25,12 +25,38 @@ h2 {
 
 /* line 17, sass/_partials/_globals.scss */
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #555; }
 
 /* line 22, sass/_partials/_globals.scss */
 .text-shadow {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+
+/* line 26, sass/_partials/_globals.scss */
+.padding-top-60 {
+  padding-top: 60px; }
+
+/* line 30, sass/_partials/_globals.scss */
+.padding-bottom-60 {
+  padding-bottom: 60px; }
+
+/* line 34, sass/_partials/_globals.scss */
+.padding-top-30 {
+  padding-top: 30px; }
+
+/* line 38, sass/_partials/_globals.scss */
+.padding-bottom-30 {
+  padding-bottom: 30px; }
+
+/* line 42, sass/_partials/_globals.scss */
+.thirteen05-section {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+/* line 47, sass/_partials/_globals.scss */
+.black-glass {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px; }
 
 @font-face {
   font-family: LeagueGothicRegular;
@@ -59,13 +85,16 @@ p {
 .font-skyblue {
   color: #27a8e0; }
 
+/* line 42, sass/_partials/_fonts.scss */
+.font-white {
+  color: #FFF !important; }
+
 /* line 1, sass/_partials/_navbar.scss */
 #thirteen05-navbar {
   background-color: transparent;
   min-height: 100px;
   box-shadow: none;
-  border: none;
-  transition: opacity .5s; }
+  border: none; }
   /* line 8, sass/_partials/_navbar.scss */
   #thirteen05-navbar .navbar-brand {
     padding: 0px 15px; }
@@ -86,60 +115,69 @@ p {
       #thirteen05-navbar .dropdown-menu li a:hover {
         background-color: #27a8e0; }
   /* line 33, sass/_partials/_navbar.scss */
-  #thirteen05-navbar .navbar-nav > li > a {
-    padding: 0px 15px;
-    line-height: 100px;
-    font-family: LeagueGothicRegular;
-    font-size: 1.6rem;
-    text-transform: lowercase;
-    color: #FFF;
-    text-shadow: 1px 1px 3px black;
+  #thirteen05-navbar .navbar-nav > .menu-item {
     transition: all .2s ease-in; }
-    /* line 43, sass/_partials/_navbar.scss */
-    #thirteen05-navbar .navbar-nav > li > a:hover {
-      background-color: #27a8e0;
-      transform: scale(1.2, 1.2);
-      text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
-      -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
-      /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-      -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
-      /* Firefox 3.5 - 3.6 */
-      box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
-      /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+    /* line 35, sass/_partials/_navbar.scss */
+    #thirteen05-navbar .navbar-nav > .menu-item > a {
+      padding: 0px 15px;
+      line-height: 100px;
+      font-family: LeagueGothicRegular;
+      font-size: 1.6rem;
+      text-transform: lowercase;
+      color: #FFF;
+      text-shadow: 1px 1px 3px black; }
 
-/* line 55, sass/_partials/_navbar.scss */
-ul.nav li.dropdown:hover ul.dropdown-menu {
-  display: block; }
-
-/* line 59, sass/_partials/_navbar.scss */
+/* line 51, sass/_partials/_navbar.scss */
 .modal-open .navbar-fixed-top,
 .modal-open .navbar-fixed-bottom {
   padding-right: 17px; }
 
+@media (min-width: 768px) {
+  /* line 59, sass/_partials/_navbar.scss */
+  Use this if you wish to hide the caret
+  .navbar-nav .caret {
+    display: none; }
+
+  /* line 64, sass/_partials/_navbar.scss */
+  .navbar-nav .open ul {
+    display: none; }
+
+  /* line 68, sass/_partials/_navbar.scss */
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #969696;
+    background: none; }
+
+  /* line 74, sass/_partials/_navbar.scss */
+  .navbar-inverse .navbar-nav > li:hover {
+    background-color: #27a8e0;
+    text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+
+  /* line 81, sass/_partials/_navbar.scss */
+  .navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block; } }
 /* line 1, sass/_partials/_btn.scss */
 .thirteen05-btn {
   width: 240px;
   height: 60px;
-  position: absolute;
-  right: 15px;
-  top: 20px;
   margin: 0;
   font-size: 30px;
+  font-family: LeagueGothicRegular;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 3px solid #CCC;
-  background: -webkit-linear-gradient(180deg, orange, darkorange);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(180deg, orange, darkorange);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(180deg, orange, darkorange);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(180deg, #ffa500, #ff8c00);
-  /* Standard syntax */
-  text-shadow: 1px 1px 1px brown;
   transition: all .2s ease-in;
-  color: white; }
-  /* line 20, sass/_partials/_btn.scss */
+  color: white;
+  position: relative;
+  z-index: 1; }
+  /* line 15, sass/_partials/_btn.scss */
   .thirteen05-btn.shadow {
     -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
     /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -147,14 +185,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     /* Firefox 3.5 - 3.6 */
     box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
-  /* line 26, sass/_partials/_btn.scss */
+  /* line 21, sass/_partials/_btn.scss */
   .thirteen05-btn:hover {
-    -ms-transform: scale(1.1, 1.1);
-    /* IE 9 */
-    -webkit-transform: scale(1.1, 1.1);
-    /* Safari */
-    transform: scale(1.1, 1.1);
-    text-shadow: 0px 3px 3px brown;
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
     border-color: white;
     color: white;
     -webkit-box-shadow: 0px 20px 10px -12px rgba(0, 0, 0, 0.3);
@@ -162,8 +197,9 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     -moz-box-shadow: 0px 20px 10px -12px rgba(0, 0, 0, 0.3);
     /* Firefox 3.5 - 3.6 */
     box-shadow: 0px 20px 10px -12px rgba(0, 0, 0, 0.3);
-    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
-  /* line 38, sass/_partials/_btn.scss */
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    z-index: 5; }
+  /* line 33, sass/_partials/_btn.scss */
   .thirteen05-btn:active {
     -ms-transform: scale(1, 1);
     /* IE 9 */
@@ -186,11 +222,38 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     -moz-box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
     /* Firefox 3.5 - 3.6 */
     box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
-    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
-  /* line 54, sass/_partials/_btn.scss */
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    outline: 0; }
+  /* line 50, sass/_partials/_btn.scss */
   .thirteen05-btn:focus {
     border-color: white;
-    color: white; }
+    color: white;
+    outline: 0; }
+
+/* line 58, sass/_partials/_btn.scss */
+#desktop-cta-btn {
+  background: -webkit-linear-gradient(180deg, orange, darkorange);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(180deg, orange, darkorange);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(180deg, orange, darkorange);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(180deg, #ffa500, #ff8c00);
+  /* Standard syntax */
+  text-shadow: 1px 1px 1px brown;
+  position: absolute;
+  right: 15px;
+  top: 20px; }
+  /* line 68, sass/_partials/_btn.scss */
+  #desktop-cta-btn:hover {
+    text-shadow: 0px 3px 3px brown; }
+
+/* line 73, sass/_partials/_btn.scss */
+.btn-primary {
+  background-color: #27a8e0; }
+  /* line 76, sass/_partials/_btn.scss */
+  .btn-primary:hover {
+    background-color: #1c7fa8; }
 
 /* line 1, sass/_partials/_home.scss */
 body {
@@ -207,27 +270,40 @@ body {
   #thirteen05-carousel .carousel-caption h1 {
     font-size: 5rem; }
 
-/* line 24, sass/_partials/_home.scss */
+/* line 18, sass/_partials/_home.scss */
+#section-home-jumbo .jumbotron {
+  background-image: url(images/thirteen05-blue-square-bg.jpg);
+  padding-bottom: 0px;
+  background-attachment: fixed; }
+  /* line 23, sass/_partials/_home.scss */
+  #section-home-jumbo .jumbotron img {
+    -webkit-filter: drop-shadow(0px -10px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3)); }
+  /* line 28, sass/_partials/_home.scss */
+  #section-home-jumbo .jumbotron p {
+    border-left: 10px solid white; }
+
+/* line 39, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
   height: 100%; }
-/* line 29, sass/_partials/_home.scss */
+/* line 44, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0; }
-/* line 35, sass/_partials/_home.scss */
+/* line 50, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1; }
-/* line 41, sass/_partials/_home.scss */
+/* line 56, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   transform: translate3d(0, 0, 0); }
-/* line 50, sass/_partials/_home.scss */
+/* line 65, sass/_partials/_home.scss */
 .carousel-fade .carousel-control {
   z-index: 2; }

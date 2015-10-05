@@ -1,21 +1,16 @@
   .thirteen05-btn{
     width: 240px;
     height: 60px;
-    position: absolute;
-    right: 15px;
-    top: 20px;
     margin: 0;
     font-size: 30px;
+    font-family: LeagueGothicRegular;
     text-transform: uppercase;
     letter-spacing: 1px;
     border: 3px solid #CCC;
-    background: -webkit-linear-gradient(180deg, orange, darkorange); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(180deg, orange, darkorange); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(180deg, orange, darkorange); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg, orange, darkorange); /* Standard syntax */
-    text-shadow: 1px 1px 1px brown;
     transition: all .2s ease-in;
     color: white;
+    position: relative;
+    z-index:1;
     
     &.shadow {
       -webkit-box-shadow: 0px 8px 6px -6px rgba(0,0,0,0.7);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -24,15 +19,15 @@
     }
     
     &:hover{
-      -ms-transform: scale(1.1,1.1); /* IE 9 */
-      -webkit-transform: scale(1.1,1.1); /* Safari */
-      transform: scale(1.1,1.1);
-      text-shadow: 0px 3px 3px brown;
+      -ms-transform: scale(1.2,1.2); 
+      -webkit-transform: scale(1.2,1.2); 
+      transform: scale(1.2,1.2);
       border-color: white;
       color: white;
       -webkit-box-shadow: 0px 20px 10px -12px rgba(0,0,0,0.3);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
       -moz-box-shadow:    0px 20px 10px -12px rgba(0,0,0,0.3);  /* Firefox 3.5 - 3.6 */
       box-shadow:         0px 20px 10px -12px rgba(0,0,0,0.3);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      z-index: 5;
     }
     
     &:active{
@@ -49,11 +44,36 @@
       -webkit-box-shadow: 0px 16px 10px -15px rgba(0,0,0,0.6);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
       -moz-box-shadow:    0px 16px 10px -15px rgba(0,0,0,0.6);  /* Firefox 3.5 - 3.6 */
       box-shadow:         0px 16px 10px -15px rgba(0,0,0,0.6);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      outline: 0;
     }
     
     &:focus{
       border-color: white;
       color: white;
+      outline: 0;
     }
     
   }
+
+#desktop-cta-btn{
+    background: -webkit-linear-gradient(180deg, orange, darkorange); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(180deg, orange, darkorange); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(180deg, orange, darkorange); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(180deg, orange, darkorange); /* Standard syntax */
+    text-shadow: 1px 1px 1px brown;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+  
+    &:hover{
+      text-shadow: 0px 3px 3px brown;
+    }
+}
+
+.btn-primary{
+  background-color: $skyblue;
+  
+  &:hover{
+    background-color: #1c7fa8;
+  }
+}

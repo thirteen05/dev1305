@@ -1,5 +1,6 @@
+<section id="section-home-business" class="thirteen05-section">
 <div class="container">
-  <div class="row">
+  <div class="row padding-bottom-30">
     <div class="col-md-12 text-center">
       <h2 class="font-skyblue font-gothic text-shadow">Your Business is Our Business</h2>
       <p class="font-din">
@@ -10,4 +11,18 @@
       </p>
     </div>
   </div>
+  <div class="row padding-bottom-30">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-4">
+        <button class="btn btn-primary btn-lg btn-block thirteen05-btn shadow">View Our Services</button>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary btn-lg btn-block thirteen05-btn shadow">Meet the Team</button>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-primary btn-lg btn-block thirteen05-btn shadow">View Our Work</button>
+      </div>
+    </div>
+  </div>
 </div>
+</section>

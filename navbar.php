@@ -29,7 +29,7 @@
 
       <ul class="nav navbar-nav navbar-right">
           <li>
-            <button class="btn navbar-btn font-gothic shadow thirteen05-btn" data-toggle="modal" data-target="#myModal" id="desktop-cta-btn">Free Evaluation</button>
+            <button class="btn navbar-btn font-gothic shadow thirteen05-btn hidden-xs" data-toggle="modal" data-target="#contactModal" id="desktop-cta-btn">Free Evaluation</button>
           </li>
       </ul>
   </div>
