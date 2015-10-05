@@ -3,7 +3,7 @@
   min-height: 100px;
   box-shadow: none;
   border: none;
-  transition: all .5s;
+  transition: opacity .5s;
   
   .navbar-brand{
     padding: 0px 15px;
@@ -54,4 +54,9 @@
 
 ul.nav li.dropdown:hover ul.dropdown-menu {
   display: block;    
+}
+
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  padding-right: 17px;
 }

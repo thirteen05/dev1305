@@ -65,7 +65,7 @@ p {
   min-height: 100px;
   box-shadow: none;
   border: none;
-  transition: all .5s; }
+  transition: opacity .5s; }
   /* line 8, sass/_partials/_navbar.scss */
   #thirteen05-navbar .navbar-brand {
     padding: 0px 15px; }
@@ -111,6 +111,11 @@ p {
 ul.nav li.dropdown:hover ul.dropdown-menu {
   display: block; }
 
+/* line 59, sass/_partials/_navbar.scss */
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+  padding-right: 17px; }
+
 /* line 1, sass/_partials/_btn.scss */
 .thirteen05-btn {
   width: 240px;
@@ -133,7 +138,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   /* Standard syntax */
   text-shadow: 1px 1px 1px brown;
   transition: all .2s ease-in;
-  color: yellow; }
+  color: white; }
   /* line 20, sass/_partials/_btn.scss */
   .thirteen05-btn.shadow {
     -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
