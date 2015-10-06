@@ -1,0 +1,40 @@
+#contactModal{
+  
+  .modal-dialog{
+    
+    .modal-content{
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      
+      .modal-header{
+        background-color: black;
+        color: #FFF;
+        
+        button.close{
+          color: #FFF;
+          font-size: 2rem;
+          
+          &:active,
+          &:focus{
+            outline: 0!important;
+          }
+        }
+        
+        .modal-title{
+          font-size: 36px;
+          line-height: 32px;
+          margin-bottom: 15px;
+        }
+      }
+      
+      .modal-body{
+        
+      }
+        
+      .modal-footer{
+        
+        
+      }
+    }
+  }
+}

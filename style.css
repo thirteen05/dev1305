@@ -10,50 +10,59 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 /* line 3, sass/_partials/_globals.scss */
+html {
+  font-size: 16px;
+  font-family: FFDIN; }
+
+/* line 8, sass/_partials/_globals.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 2000px; }
 
-/* line 9, sass/_partials/_globals.scss */
+/* line 14, sass/_partials/_globals.scss */
 h2 {
   font-size: 4rem; }
 
-/* line 13, sass/_partials/_globals.scss */
+/* line 18, sass/_partials/_globals.scss */
 .relative {
   position: relative; }
 
-/* line 17, sass/_partials/_globals.scss */
+/* line 22, sass/_partials/_globals.scss */
 p {
   font-size: 1.2rem;
   color: #555; }
 
-/* line 22, sass/_partials/_globals.scss */
+/* line 29, sass/_partials/_globals.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 34, sass/_partials/_globals.scss */
 .text-shadow {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
-/* line 26, sass/_partials/_globals.scss */
+/* line 38, sass/_partials/_globals.scss */
 .padding-top-60 {
   padding-top: 60px; }
 
-/* line 30, sass/_partials/_globals.scss */
+/* line 42, sass/_partials/_globals.scss */
 .padding-bottom-60 {
   padding-bottom: 60px; }
 
-/* line 34, sass/_partials/_globals.scss */
+/* line 46, sass/_partials/_globals.scss */
 .padding-top-30 {
   padding-top: 30px; }
 
-/* line 38, sass/_partials/_globals.scss */
+/* line 50, sass/_partials/_globals.scss */
 .padding-bottom-30 {
   padding-bottom: 30px; }
 
-/* line 42, sass/_partials/_globals.scss */
+/* line 54, sass/_partials/_globals.scss */
 .thirteen05-section {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 47, sass/_partials/_globals.scss */
+/* line 59, sass/_partials/_globals.scss */
 .black-glass {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 15px; }
@@ -94,30 +103,35 @@ p {
   background-color: transparent;
   min-height: 100px;
   box-shadow: none;
-  border: none; }
+  border: none;
+  transition: background-color .5s; }
   /* line 8, sass/_partials/_navbar.scss */
   #thirteen05-navbar .navbar-brand {
     padding: 0px 15px; }
-  /* line 12, sass/_partials/_navbar.scss */
+    /* line 11, sass/_partials/_navbar.scss */
+    #thirteen05-navbar .navbar-brand img {
+      -webkit-filter: drop-shadow(0px 1px 1px black);
+      filter: drop-shadow(0px 1px 3px black); }
+  /* line 17, sass/_partials/_navbar.scss */
   #thirteen05-navbar .dropdown-menu {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0px;
     margin-top: 0px; }
-    /* line 17, sass/_partials/_navbar.scss */
+    /* line 22, sass/_partials/_navbar.scss */
     #thirteen05-navbar .dropdown-menu li a {
       padding: 3px 20px;
       color: white;
       font-family: LeagueGothicRegular;
       font-size: 1.4rem;
       text-transform: lowercase;
-      text-shadow: 0px 1px 3px black; }
-      /* line 26, sass/_partials/_navbar.scss */
+      text-shadow: 0px 1px 1px black; }
+      /* line 31, sass/_partials/_navbar.scss */
       #thirteen05-navbar .dropdown-menu li a:hover {
         background-color: #27a8e0; }
-  /* line 33, sass/_partials/_navbar.scss */
+  /* line 38, sass/_partials/_navbar.scss */
   #thirteen05-navbar .navbar-nav > .menu-item {
     transition: all .2s ease-in; }
-    /* line 35, sass/_partials/_navbar.scss */
+    /* line 40, sass/_partials/_navbar.scss */
     #thirteen05-navbar .navbar-nav > .menu-item > a {
       padding: 0px 15px;
       line-height: 100px;
@@ -127,29 +141,29 @@ p {
       color: #FFF;
       text-shadow: 1px 1px 3px black; }
 
-/* line 51, sass/_partials/_navbar.scss */
+/* line 56, sass/_partials/_navbar.scss */
 .modal-open .navbar-fixed-top,
 .modal-open .navbar-fixed-bottom {
   padding-right: 17px; }
 
 @media (min-width: 768px) {
-  /* line 59, sass/_partials/_navbar.scss */
+  /* line 64, sass/_partials/_navbar.scss */
   Use this if you wish to hide the caret
   .navbar-nav .caret {
     display: none; }
 
-  /* line 64, sass/_partials/_navbar.scss */
+  /* line 69, sass/_partials/_navbar.scss */
   .navbar-nav .open ul {
     display: none; }
 
-  /* line 68, sass/_partials/_navbar.scss */
+  /* line 73, sass/_partials/_navbar.scss */
   .navbar-inverse .navbar-nav > .open > a,
   .navbar-inverse .navbar-nav > .open > a:hover,
   .navbar-inverse .navbar-nav > .open > a:focus {
     color: #969696;
     background: none; }
 
-  /* line 74, sass/_partials/_navbar.scss */
+  /* line 79, sass/_partials/_navbar.scss */
   .navbar-inverse .navbar-nav > li:hover {
     background-color: #27a8e0;
     text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.2);
@@ -160,7 +174,7 @@ p {
     box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
 
-  /* line 81, sass/_partials/_navbar.scss */
+  /* line 86, sass/_partials/_navbar.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block; } }
 /* line 1, sass/_partials/_btn.scss */
@@ -206,7 +220,7 @@ p {
     -webkit-transform: scale(1, 1);
     /* Safari */
     transform: scale(1, 1);
-    text-shadow: 0px 2px 3px brown;
+    text-shadow: 1px 1px 1px brown;
     border-color: #CCC;
     color: white;
     background: -webkit-linear-gradient(180deg, orange, darkorange);
@@ -217,13 +231,13 @@ p {
     /* For Firefox 3.6 to 15 */
     background: linear-gradient(180deg, #ffa500, #ff8c00);
     /* Standard syntax */
-    -webkit-box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
     /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
     /* Firefox 3.5 - 3.6 */
-    box-shadow: 0px 16px 10px -15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 8px 6px -6px rgba(0, 0, 0, 0.7);
     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-    outline: 0; }
+    outline: 0 !important; }
   /* line 50, sass/_partials/_btn.scss */
   .thirteen05-btn:focus {
     border-color: white;
@@ -266,44 +280,86 @@ body {
   /* line 9, sass/_partials/_home.scss */
   #thirteen05-carousel .carousel-inner {
     height: 100%; }
-  /* line 13, sass/_partials/_home.scss */
+  /* line 20, sass/_partials/_home.scss */
   #thirteen05-carousel .carousel-caption h1 {
     font-size: 5rem; }
 
-/* line 18, sass/_partials/_home.scss */
+/* line 25, sass/_partials/_home.scss */
 #section-home-jumbo .jumbotron {
   background-image: url(images/thirteen05-blue-square-bg.jpg);
   padding-bottom: 0px;
   background-attachment: fixed; }
-  /* line 23, sass/_partials/_home.scss */
-  #section-home-jumbo .jumbotron img {
+  /* line 30, sass/_partials/_home.scss */
+  #section-home-jumbo .jumbotron #img-iphone6 {
     -webkit-filter: drop-shadow(0px -10px 4px rgba(0, 0, 0, 0.3));
-    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3)); }
-  /* line 28, sass/_partials/_home.scss */
+    filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    position: relative;
+    top: 30px; }
+  /* line 38, sass/_partials/_home.scss */
   #section-home-jumbo .jumbotron p {
-    border-left: 10px solid white; }
+    border-left: 6px double white; }
+  /* line 44, sass/_partials/_home.scss */
+  #section-home-jumbo .jumbotron h2 span {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    position: relative;
+    bottom: 8px; }
 
-/* line 39, sass/_partials/_home.scss */
+/* line 56, sass/_partials/_home.scss */
+#section-home-buckets h3 {
+  font-size: 2.5rem; }
+
+/* line 67, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
   height: 100%; }
-/* line 44, sass/_partials/_home.scss */
+/* line 72, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0; }
-/* line 50, sass/_partials/_home.scss */
+/* line 78, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1; }
-/* line 56, sass/_partials/_home.scss */
+/* line 84, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   transform: translate3d(0, 0, 0); }
-/* line 65, sass/_partials/_home.scss */
+/* line 93, sass/_partials/_home.scss */
 .carousel-fade .carousel-control {
   z-index: 2; }
+
+/* line 98, sass/_partials/_home.scss */
+.carousel, .item, .active {
+  height: 100%; }
+
+/* line 101, sass/_partials/_home.scss */
+.carousel-inner {
+  height: 100%; }
+
+/* line 5, sass/_partials/_modal.scss */
+#contactModal .modal-dialog .modal-content {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+  /* line 9, sass/_partials/_modal.scss */
+  #contactModal .modal-dialog .modal-content .modal-header {
+    background-color: black;
+    color: #FFF; }
+    /* line 13, sass/_partials/_modal.scss */
+    #contactModal .modal-dialog .modal-content .modal-header button.close {
+      color: #FFF;
+      font-size: 2rem; }
+      /* line 17, sass/_partials/_modal.scss */
+      #contactModal .modal-dialog .modal-content .modal-header button.close:active, #contactModal .modal-dialog .modal-content .modal-header button.close:focus {
+        outline: 0 !important; }
+    /* line 23, sass/_partials/_modal.scss */
+    #contactModal .modal-dialog .modal-content .modal-header .modal-title {
+      font-size: 36px;
+      line-height: 32px;
+      margin-bottom: 15px; }

@@ -8,7 +8,7 @@
         </p>
       </div>
       <div class="col-md-4">
-        <a href="what-we-do/design-development"><h3 class="font-gothic font-skyblue">Content Driven Search Engine Optimization / SEO</h3></a>
+        <a href="what-we-do/design-development"><h3 class="font-gothic font-skyblue">Content-Driven SEO</h3></a>
         <p class="font-din">
           If no one sees your website, you’ll never even get the chance to make an unforgettable impression.
         </p>

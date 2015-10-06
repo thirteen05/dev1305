@@ -8,6 +8,13 @@ body{
   
   .carousel-inner{
     height: 100%;
+    
+    #home-carousel-slide-1{
+      
+      img{
+        
+      }
+    }
   }
   
   .carousel-caption h1{
@@ -20,13 +27,34 @@ body{
   padding-bottom: 0px;
   background-attachment: fixed;
   
-  img{
+  #img-iphone6{
     -webkit-filter: drop-shadow(0px -10px 4px rgba(0, 0, 0, 0.3));
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+    max-width: 100%;
+    position: relative;
+    top: 30px;
   }
   
   p{
-    border-left: 10px solid white;
+    border-left: 6px double white;
+  }
+  
+  h2{
+    
+    span{
+      font-size: 2rem;
+      letter-spacing: -1px;
+      position: relative;
+      bottom: 8px;
+    }
+    
+  }
+}
+
+#section-home-buckets{
+  
+  h3{
+    font-size: 2.5rem;
   }
 }
 
@@ -65,4 +93,11 @@ body{
     .carousel-control {
         z-index: 2;
     }
+}
+
+.carousel, .item, .active {
+height:100%;
+}
+.carousel-inner {
+height:100%;
 }

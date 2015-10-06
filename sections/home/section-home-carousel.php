@@ -9,7 +9,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="<?php echo get_stylesheet_directory_uri(); ?>/images/1305-home.jpg" alt="First slide">
+          <img class="first-slide" src="<?php echo get_stylesheet_directory_uri(); ?>/images/thirteen05-blue-square-bg.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1 class="font-gothic">Award-Winning Web Design.</h1>

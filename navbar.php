@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" id="thirteen05-navbar" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top hidden-xs" id="thirteen05-navbar" role="navigation">
   <div class="container relative">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
