@@ -1,4 +1,4 @@
-<section id="section-home-jumbo">
+<section id="section-home-jumbo-2">
   <div class="jumbotron" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row">
@@ -10,7 +10,7 @@
           <button class="btn btn-primary btn-lg thirteen05-btn shadow" data-toggle="modal" data-target="#contactModal">Contact Us</button>
         </div>
         <div class="col-md-4">
-          <img id="img-iphone6" class="hidden-xs apple" src="<?php echo get_stylesheet_directory_uri(); ?>/images/thirteen05-responsive-web-design.png" />
+          <img id="img-iphone6" class="hidden-xs" src="<?php echo get_stylesheet_directory_uri(); ?>/images/thirteen05-responsive-web-design.png" />
         </div>
       </div>
     </div>

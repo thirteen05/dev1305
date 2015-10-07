@@ -22,7 +22,13 @@ body{
   }
 }
 
-#section-home-jumbo .jumbotron{
+#section-home-jumbo-1 .jumbotron{
+  min-height: 80vh;
+  background-image: url(images/thirteen05-blue-square-bg.jpg);
+  
+}
+
+#section-home-jumbo-2 .jumbotron{
   background-image: url(images/thirteen05-blue-square-bg.jpg);
   padding-bottom: 0px;
   background-attachment: fixed;

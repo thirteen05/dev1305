@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/main.css">
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
+  
+  </head>
     <body <?php body_class(); ?>>
       
       <?php get_template_part('navbar'); ?>

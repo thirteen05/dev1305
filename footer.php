@@ -65,22 +65,9 @@
               window.location = this.href;
             });
           });
-          
-          $.stellar.positionProperty.apple = {
-              setTop: function($el, newTop, originalTop) {
-                  $el.css({
-                      'top': newTop,
-                      'left': $el.hasClass('apple') ? originalTop - newTop : 0
-                  });
-              },
-              setLeft: function($el, newLeft, originalLeft) {
-                  $el.css('left', newLeft);
-              }
-          };
 
           $.stellar({
               horizontalScrolling: false,
-              positionProperty: 'apple'
           });
           
           

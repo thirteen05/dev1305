@@ -21,48 +21,52 @@ body {
   min-height: 2000px; }
 
 /* line 14, sass/_partials/_globals.scss */
+iframe {
+  border: none; }
+
+/* line 18, sass/_partials/_globals.scss */
 h2 {
   font-size: 4rem; }
 
-/* line 18, sass/_partials/_globals.scss */
+/* line 22, sass/_partials/_globals.scss */
 .relative {
   position: relative; }
 
-/* line 22, sass/_partials/_globals.scss */
+/* line 26, sass/_partials/_globals.scss */
 p {
   font-size: 1.2rem;
   color: #555; }
 
-/* line 29, sass/_partials/_globals.scss */
+/* line 33, sass/_partials/_globals.scss */
 a:hover {
   text-decoration: none; }
 
-/* line 34, sass/_partials/_globals.scss */
+/* line 38, sass/_partials/_globals.scss */
 .text-shadow {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 
-/* line 38, sass/_partials/_globals.scss */
+/* line 42, sass/_partials/_globals.scss */
 .padding-top-60 {
   padding-top: 60px; }
 
-/* line 42, sass/_partials/_globals.scss */
+/* line 46, sass/_partials/_globals.scss */
 .padding-bottom-60 {
   padding-bottom: 60px; }
 
-/* line 46, sass/_partials/_globals.scss */
+/* line 50, sass/_partials/_globals.scss */
 .padding-top-30 {
   padding-top: 30px; }
 
-/* line 50, sass/_partials/_globals.scss */
+/* line 54, sass/_partials/_globals.scss */
 .padding-bottom-30 {
   padding-bottom: 30px; }
 
-/* line 54, sass/_partials/_globals.scss */
+/* line 58, sass/_partials/_globals.scss */
 .thirteen05-section {
   padding-top: 30px;
   padding-bottom: 30px; }
 
-/* line 59, sass/_partials/_globals.scss */
+/* line 63, sass/_partials/_globals.scss */
 .black-glass {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 15px; }
@@ -285,61 +289,66 @@ body {
     font-size: 5rem; }
 
 /* line 25, sass/_partials/_home.scss */
-#section-home-jumbo .jumbotron {
+#section-home-jumbo-1 .jumbotron {
+  min-height: 80vh;
+  background-image: url(images/thirteen05-blue-square-bg.jpg); }
+
+/* line 31, sass/_partials/_home.scss */
+#section-home-jumbo-2 .jumbotron {
   background-image: url(images/thirteen05-blue-square-bg.jpg);
   padding-bottom: 0px;
   background-attachment: fixed; }
-  /* line 30, sass/_partials/_home.scss */
-  #section-home-jumbo .jumbotron #img-iphone6 {
+  /* line 36, sass/_partials/_home.scss */
+  #section-home-jumbo-2 .jumbotron #img-iphone6 {
     -webkit-filter: drop-shadow(0px -10px 4px rgba(0, 0, 0, 0.3));
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
     max-width: 100%;
     position: relative;
     top: 30px; }
-  /* line 38, sass/_partials/_home.scss */
-  #section-home-jumbo .jumbotron p {
-    border-left: 6px double white; }
   /* line 44, sass/_partials/_home.scss */
-  #section-home-jumbo .jumbotron h2 span {
+  #section-home-jumbo-2 .jumbotron p {
+    border-left: 6px double white; }
+  /* line 50, sass/_partials/_home.scss */
+  #section-home-jumbo-2 .jumbotron h2 span {
     font-size: 2rem;
     letter-spacing: -1px;
     position: relative;
     bottom: 8px; }
 
-/* line 56, sass/_partials/_home.scss */
+/* line 62, sass/_partials/_home.scss */
 #section-home-buckets h3 {
   font-size: 2.5rem; }
 
-/* line 67, sass/_partials/_home.scss */
+/* line 73, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
   height: 100%; }
-/* line 72, sass/_partials/_home.scss */
+/* line 78, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .item,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   opacity: 0; }
-/* line 78, sass/_partials/_home.scss */
+/* line 84, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .active,
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1; }
-/* line 84, sass/_partials/_home.scss */
+/* line 90, sass/_partials/_home.scss */
 .carousel-fade .carousel-inner .next,
 .carousel-fade .carousel-inner .prev,
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
   transform: translate3d(0, 0, 0); }
-/* line 93, sass/_partials/_home.scss */
+/* line 99, sass/_partials/_home.scss */
 .carousel-fade .carousel-control {
   z-index: 2; }
 
-/* line 98, sass/_partials/_home.scss */
+/* line 104, sass/_partials/_home.scss */
 .carousel, .item, .active {
   height: 100%; }
 
-/* line 101, sass/_partials/_home.scss */
+/* line 107, sass/_partials/_home.scss */
 .carousel-inner {
   height: 100%; }
 
